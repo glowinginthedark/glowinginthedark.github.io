@@ -37,6 +37,7 @@ p, ul li {
 
 header {
 	background-color: lightgrey;
+	z-index: 1;
 }
 
 nav {
