@@ -1,0 +1,75 @@
+.project {
+	border-right: 3px solid transparent;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.2s;
+	margin: 15px 0px;
+}
+
+.not_personal {
+	background-color: #f2f2f2;
+}
+
+.personal {
+	background-color: #ddff99;
+}
+
+.project:hover {
+	border-right: 3px solid black;
+}
+
+.project_info {
+	padding: 15px;
+}
+
+p {
+	margin: 0px;
+}
+
+.name a {
+	color: black;
+	text-decoration: none;
+}
+
+.name a:visited {
+	color: black;
+}
+
+.name p {
+	display: inline;
+}
+
+.fa-link {
+	display: inline;
+	transition: all 0.2s;
+	opacity: 0.2;
+}
+
+.fa-link:hover {
+	opacity: 0.8;
+}
+
+.description {
+	padding: 15px 0px;
+}
+
+.description p {
+	font-size: 18px;
+}
+
+.snapshot {
+	padding: 15px;
+	min-width: 350px;
+	max-width: 350px;
+	transition: all 0.2s;
+}
+
+.snapshot:hover {
+	opacity: 0.5;
+}
+
+.snapshot img {
+	width: 100%;
+	height: auto;
+}

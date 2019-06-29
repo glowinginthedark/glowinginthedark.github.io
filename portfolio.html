@@ -4,7 +4,10 @@
 	<title>glowinginthedark</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+	<script src="https://kit.fontawesome.com/850c559ce3.js"></script>
 </head>
 <body>
 
@@ -12,6 +15,7 @@
 	<header>
 		<nav>
 			<ul>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="resume.pdf" download>My resume (download)</a></li>
 				<li><a href="https://www.github.com/glowinginthedark">Github</a></li>
@@ -21,7 +25,120 @@
 	</header>
 
 	<main>
-		
+		<h1>Projects that I have worked on (<span class="personal">Green</span> projects are my personal projects):-</h1>
+		<br>
+
+		<div class="project not_personal">
+			<div class="project_info">
+				<div class="name">
+					<p>hackathonistas.github.io</p>
+					<a href="https://hackathonistas.github.io"><i class="fas fa-link"></i></a>
+				</div>
+				<div class="description">
+					<p class="subdued">
+						Open source project that I have heavily contributed to. <span class="highlight">This website features upcoming hackathons</span>
+						(online and offline) and <span class="highlight">allows interested people to add information about new ones</span>. In the near 
+						future it will also allow users to find others and build teams.
+					</p>
+				</div>
+				<div>
+					<ul>
+						<li class="highlight">JavaScript</li>
+						<li class="highlight">Firebase</li>
+					</ul>
+				</div>
+			</div>
+			<div class="snapshot">
+				<a href="https://hackathonistas.github.io"><img src="images/hackathonistas.github.io.png"></a>
+			</div>
+		</div>
+
+		<div class="project not_personal">
+			<div class="project_info">
+				<div class="name">
+					<p>The Cardival</p>
+					<a href="https://pickle-cardnival.herokuapp.com/"><i class="fas fa-link"></i></a>
+				</div>
+				<div class="description">
+					<p class="subdued">
+						A <span class="highlight">portal for card games</span> featuring an online store and a leaderboard.
+					</p>
+				</div>
+				<div>
+					<ul>
+						<li class="highlight">JavaScript</li>
+						<li class="highlight">NodeJS</li>
+						<li class="highlight">Firebase</li>
+						<li class="highlight">Handlebars</li>
+					</ul>
+				</div>
+			</div>
+			<div class="snapshot">
+				<a href="https://pickle-cardnival.herokuapp.com/"><img src="images/thecardnival.png"></a>
+			</div>
+		</div>
+
+		<div class="project personal">
+			<div class="project_info">
+				<div class="name">
+					<p>Gusbot</p>
+					<a href="https://github.com/glowinginthedark/gusbot"><i class="fas fa-link"></i></a>
+				</div>
+				<div class="description">
+					<p class="subdued">
+						<span class="highlight">Telegram group chat bot</span> with a variety of features, and some special image editing features.
+						<br><br>
+						Notable features:-<br>
+							 - Instant <span class="highlight">image editing:</span><br>
+							    <span style="padding-left: 20px;">- brighten image </span><br>
+							    <span style="padding-left: 20px;">- increase contrast </span><br>
+							    <span style="padding-left: 20px;">- make image 'smooth'</span><br>
+							    <span style="padding-left: 20px;">- grayscale</span><br>
+							- Live <span class="highlight">weather</span> information <br>
+							- Worldwide time <br>
+							- Currency conversions <br>
+							- <span class="highlight">Text to speech</span><br>
+							- Wiki search <br>
+							- <span class="highlight">Reddit</span> content <br>
+					</p>
+				</div>
+				<div>
+					<ul>
+						<li class="highlight">JavaScript</li>
+						<li class="highlight">TelegrafJS</li>
+						<li class="highlight">OpenCV</li>
+						<li class="highlight">MySQL</li>
+					</ul>
+				</div>
+			</div>
+			<div class="snapshot">
+				<a href="https://github.com/glowinginthedark/gusbot"><img src="images/gusbot.png"></a>
+			</div>
+		</div>
+
+		<div class="project personal">
+			<div class="project_info">
+				<div class="name">
+					<p>Grab Session Links</p>
+					<a href="https://chrome.google.com/webstore/detail/grab-session-links/lhciibpofggfoobnonichplmcognkgmo"><i class="fas fa-link"></i></a>
+				</div>
+				<div class="description">
+					<p class="subdued">
+						A <span class="highlight">chrome extension</span> that allows you to copy all the links from your open tabs with one click, as well as paste them and open them all at once with one click.
+					</p>
+				</div>
+				<div>
+					<ul>
+						<li class="highlight">JavaScript</li>
+						<li class="highlight">CSS</li>
+					</ul>
+				</div>
+			</div>
+			<div class="snapshot">
+				<a href="A chrome extension that allows you to copy all the links from your open tabs with one click, as well as paste them and open them all at once with one click."><img src="images/grab_session_links.png"></a>
+			</div>
+		</div>
+
 	</main>
 
 </body>
