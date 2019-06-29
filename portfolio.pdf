@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>glowinginthedark</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+	<div id="nav_menu_button"><p>menu</p></div>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="resume.pdf" download>My resume (download)</a></li>
+				<li><a href="https://www.github.com/glowinginthedark">Github</a></li>
+				<li><a href="mailto: solidhydrogenblock@gmail.com">Email</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		
+	</main>
+
+</body>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</html>
