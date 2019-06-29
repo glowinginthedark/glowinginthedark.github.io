@@ -92,7 +92,7 @@ header ul a:visited {
 	color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	header {
 		position: absolute;
 		top: 80px;
@@ -117,7 +117,7 @@ header ul a:visited {
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 	nav {
 		display: block !important;
 	}
