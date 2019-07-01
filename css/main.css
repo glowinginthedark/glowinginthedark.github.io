@@ -53,15 +53,9 @@ nav {
 	border: 3px solid black;
 	display: none;
 	background-color: white;
-	transition: all 0.2s;
 	position: absolute;
 	top: 10px;
 	right: 15px;
-}
-
-#nav_menu_button:hover {
-	background-color: black;
-	color: white;
 }
 
 #nav_menu_button p {
