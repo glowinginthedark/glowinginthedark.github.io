@@ -40,14 +40,18 @@ p {
 	display: inline;
 }
 
-.fa-link {
+.fa-link, .fa-chrome, .fa-firefox {
 	display: inline;
 	transition: all 0.2s;
-	opacity: 0.2;
+	opacity: 0.3;
 }
 
-.fa-link:hover {
-	opacity: 0.8;
+.fa-link:hover, .fa-chrome:hover, .fa-firefox:hover {
+	opacity: 0.9;
+}
+
+.fa-firefox, .fa-chrome {
+	font-size: 20px;
 }
 
 .description {
