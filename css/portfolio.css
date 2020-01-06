@@ -89,7 +89,6 @@ p {
 
 @media screen and  (max-width: 840px) {
 	main > h2 {
-		margin-top: 25px;
 		padding-right: 100px;
 	}
 }
