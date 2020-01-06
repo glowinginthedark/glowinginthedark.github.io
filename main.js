@@ -19,8 +19,8 @@ window.onload = () => {
 	nav_menu_button.addEventListener('click', () => {
 
 		if ( nav.style.display == 'none' || nav.style.display == '' ) {
-			nav_menu_button.style.backgroundColor = 'black';
-			nav_menu_button.style.color = 'white';
+			nav_menu_button.style.backgroundColor = 'white';
+			nav_menu_button.getElementsByTagName('p')[0].style.color = 'black';
 			nav.style.display = 'block';
 
 			setTimeout(() => {
@@ -32,16 +32,16 @@ window.onload = () => {
 					if ( innerId == 'nav_menu_button' || isDescendant(header, target) || isDescendant(nav_menu_button, target) ) {
 
 					} else {
-						nav_menu_button.style.backgroundColor = 'white';
-						nav_menu_button.style.color = 'black';
+						nav_menu_button.style.backgroundColor = 'black';
+						nav_menu_button.getElementsByTagName('p')[0].style.color = 'white';
 						nav.style.display = 'none';
 					}
 				});
 			}, 50);
 
 		} else {
-			nav_menu_button.style.backgroundColor = 'white';
-			nav_menu_button.style.color = 'black';
+			nav_menu_button.style.backgroundColor = 'black';
+			nav_menu_button.getElementsByTagName('p')[0].style.color = 'white';
 			nav.style.display = 'none';
 		}
 

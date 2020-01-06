@@ -87,21 +87,22 @@ p {
 	height: auto;
 }
 
-@media screen and  (max-width: 600px) {
-	main > h1 {
+@media screen and  (max-width: 840px) {
+	main > h2 {
+		margin-top: 25px;
 		padding-right: 100px;
 	}
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 840px) {
 	.project {
 		flex-direction: column;
 		align-items: center;
 	}
 }
 
-@media screen and (max-width: 430px) {
-	main h1 {
+@media screen and (max-width: 840px) {
+	main h2 {
 		font-size: 23px;
 	}
 
