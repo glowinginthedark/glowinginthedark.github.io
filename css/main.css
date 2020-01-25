@@ -29,6 +29,10 @@ body * {
 	font-family: 'Share Tech Mono', monospace;
 }
 
+body *::selection {
+	background-color: #951b70;
+}
+
 main {
 	padding-top: 15px;
 	padding-right: 650px;
