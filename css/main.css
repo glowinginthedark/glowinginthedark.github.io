@@ -1,7 +1,17 @@
 html {
-	background-image: url("../images/bg.jpg");
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(40, 4, 73, 0.45)
+	), url("../images/bg.jpg");
+	background-color: black;
+	background-position: center;
+	transition: background-size 0.5s;
+	/* mix-blend-mode: multiply; */
+	height: 100vh;
 	background-repeat: no-repeat;
-  background-attachment: fixed;
+	background-attachment: fixed;
+	background-size: 101% auto;
+	overflow-y: scroll;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -9,14 +19,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-	margin-top: 0px;
+	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
-	max-width: 1200px;
+	max-width: 1050px;
 	padding: 15px;
-	padding-top: 0px;
 	border-left: 5px solid black;
+	border-radius: 20px;
 	background-color: black;
 	opacity: 0.9;
 }
@@ -26,7 +36,8 @@ body:hover {
 }
 
 body * {
-	font-family: 'Share Tech Mono', monospace;
+	/* font-family: 'Share Tech Mono', monospace; */
+	font-family: 'Quicksand', sans-serif;
 }
 
 body *::selection {
@@ -34,8 +45,9 @@ body *::selection {
 }
 
 main {
-	padding-top: 15px;
-	padding-right: 650px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 550px;
 }
 
 h1, h2 {
@@ -60,6 +72,7 @@ p, ul li {
 header {
 	background-color: lightgrey;
 	z-index: 1;
+	border-radius: 10px;
 }
 
 nav {
@@ -78,6 +91,7 @@ nav {
 	position: absolute;
 	top: 15px;
 	right: 15px;
+	border-radius: 15px;
 }
 
 #nav_menu_button p {
@@ -87,6 +101,7 @@ nav {
 
 header ul {
 	padding: 10px 0px;
+	margin: 0px;
 	margin-bottom: 0px;
 	list-style-type: none;
 	display: flex;
@@ -95,18 +110,26 @@ header ul {
 
 header ul a {
 	color: black;
-	border-bottom: 3px solid transparent;
+	/* border-bottom: 3px solid transparent; */
 	transition: border 0.2s;
-	padding: 0px 10px;
 	text-decoration: none;
-}
-
-header ul a:hover {
-	border-bottom: 3px solid black;
+	border-radius: 10px;
+	transition: all 0.5s;
+	padding: 6px 15px;
 }
 
 header ul a:visited {
-	color: black;
+	color: inherit;
+}
+
+header ul a:hover {
+	/* border-bottom: 1px solid black; */
+	background-color: black;
+	color: white;
+}
+
+.fa-external-link-alt {
+	font-size: 16px;
 }
 
 @media screen and (max-width: 1230px) {

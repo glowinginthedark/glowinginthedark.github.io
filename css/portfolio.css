@@ -9,7 +9,13 @@ main {
 	display: flex;
 	justify-content: space-between;
 	transition: all 0.2s;
-	margin: 15px 0px;
+	margin: 15px 0px 5px 0px;
+	border-radius: 15px;
+}
+
+span {
+	border-radius: 10px;
+	padding: 3px;
 }
 
 .not_personal {
@@ -85,6 +91,7 @@ p {
 .snapshot img {
 	width: 100%;
 	height: auto;
+	border-radius: 15px;
 }
 
 @media screen and  (max-width: 840px) {
@@ -96,7 +103,7 @@ p {
 @media screen and (max-width: 840px) {
 	.project {
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-start;
 	}
 }
 
