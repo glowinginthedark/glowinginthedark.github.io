@@ -11,6 +11,8 @@ main {
 	transition: all 0.2s;
 	margin: 15px 0px 5px 0px;
 	border-radius: 15px;
+	background-color: black;
+	/* box-shadow: 0 0 5px 2px #8c2753, 0 0 5px #8c2753 inset; */
 }
 
 span {
@@ -20,14 +22,15 @@ span {
 
 .not_personal {
 	/* background-color: #f2f2f2; */
-	background-color: transparent;
-	border: 3px solid white;
+	/* background-color: transparent; */
+	border: 3px solid purple;
 }
 
 .personal {
 	/* background-color: #ddff99; */
-	background-color: transparent;
-	border: 3px solid yellow;
+	/* background-color: transparent; */
+	/* border: 3px solid yellow; */
+	border: 3px solid purple;
 }
 
 .project:hover {

@@ -19,7 +19,10 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
+				<li style="display: flex; flex-direction: column;">
+					<a href="portfolio.html">Portfolio and work</a>
+					<small style="width: 100%; text-align: center; font-size: 15px; font-weight: bold; color: rgb(248, 106, 248);">↑ updated! ↑</small>
+				</li>
 				<!--
 				<li><a href="resume.pdf" download>My resume <i class="fas fa-file-download"></i></a></li>
 				-->
@@ -29,24 +32,32 @@
 		</nav>
 	</header>
 
-	<main>
-		<div class="main" style="min-width: 500px;">
+	<main class="home_main">
+		<div class="main">
 
 			<h1>Hello!</h1>
-			<h2>My name is Bilal</h2>
+			<h2>My name is <a class="self_name" target="_blank" style="position: absolute; padding-left: 10px;" href="https://www.linkedin.com/in/muhammad-bilal-3a2b02186/">Bilal<i class="fas fa-external-link-alt" style="margin-right: 0 !important; position: relative; margin-right: 30px; float:right;"></i></a></h2>
 			<br>
 			<p class="subdued">
-				I am a student and a <span class="highlight">software developer</span> in the making.
-				I enjoy creating <span class="highlight">web</span> and <span class="highlight">mobile (android) applications.</span>
+				I am a <span class="highlight">software developer</span> based in Vancouver, BC&emsp;<span style="color: grey"> ̶w̶h̶o̶ ̶w̶i̶l̶l̶ ̶t̶a̶k̶e̶ ̶y̶o̶u̶ ̶t̶o̶ ̶p̶r̶o̶d̶u̶c̶t̶i̶o̶n̶ ̶n̶e̶x̶t̶ ̶m̶o̶n̶t̶h̶,̶ ̶I̶ ̶p̶r̶o̶m̶i̶s̶e̶</span> with experience in <span class="highlight">project management</span>, specializing in <span class="highlight">full-stack (web and mobile) devleopment</span>.
 				<br />
 				<br />
-				Click <a class="highlight" href="portfolio.html">here</a> to check out my portfolio.
 			</p>
 		</div>
 
-		<div class='portrait'>
-			<img src="images/abc.jpg" />
+		<div class="main main2">
+			<p class="subdued">
+				As a lifelong student of <span class="highlight">Computer Science</span> and <span class="highlight">Mathematics</span>, I also
+				enjoy participating in research involving algorithms and their applications.
+				<br />
+				<br />
+				Currently, I am working on <span class="highlight">Optical-RL Gym</span> - a simulator for running reinforcement learning algorithms that can train optical fiber networks to be faster at delivering your internet traffic.
+			</p>
 		</div>
+
+		<!-- <div class='portrait'>
+			<img src="images/abc.jpg" />
+		</div> -->
 		
 
 		<!--

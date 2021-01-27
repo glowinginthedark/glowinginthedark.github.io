@@ -2,27 +2,37 @@ html {
 	background: linear-gradient(
 		rgba(0, 0, 0, 0.45), 
 		rgba(40, 4, 73, 0.45)
-	), url("../images/bg.jpg");
-	background-color: black;
+	), url("../images/wall.jpg");
+	/* background-color: black;
 	background-position: center;
-	transition: background-size 0.5s;
+	transition: background-size 0.5s; */
 	/* mix-blend-mode: multiply; */
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 101% auto;
-	overflow-y: scroll;
+	background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6, p {
 	color: white;
 }
 
+.main {
+	min-width: 500px;
+}
+
+.main2 {
+	padding-top: 50px; 
+	margin-left: 500px;
+}
+
 .main > h1 {
+	min-width: auto;
 	font-size: 110px;
 }
 
 .main > h2 {
+	min-width: auto;
 	font-size: 60px;
 	margin-top: -30px;
 }
@@ -34,9 +44,9 @@ body {
 	margin-bottom: 15px;
 	max-width: 1050px;
 	padding: 15px;
-	border-left: 5px solid black;
+	/* border-left: 5px solid black; */
 	border-radius: 20px;
-	background-color: rgb(0, 0, 0, 0.5);
+	/* background-color: rgb(0, 0, 0, 0.5); */
 	/* opacity: 0.9; */
 }
 
@@ -57,11 +67,12 @@ body *::selection {
 	height: 450px;
 }
 
-main {
+.home_main {
 	padding-top: 50px;
 	padding-bottom: 50px;
-	padding-right: 550px;
+	padding-right: 450px;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	margin-left: 50px;
 }
@@ -80,17 +91,34 @@ p, ul li {
 	/* color: #808080; */
 }
 
+.highlight::selection {
+	background-color: turquoise;
+}
+
 .highlight {
-	color: white;
+	/* color: white; */
 	/* font-weight: bold; */
-	color: #C0C0C0;
+	color: rgb(149, 53, 187);
+	font-weight: 600;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.45);
+	/* text-shadow: 0 0 2px #8c2753; */
 }
 
 header {
-	background-color: lightgrey;
+	/* background-color: lightgrey; */
 	z-index: 1;
 	border-radius: 10px;
+	border-left: 3px dotted purple;
+	border-right: 3px dotted purple;
+	/* box-shadow: 0 0 5px #8c2753, 0 0 5px #8c2753 inset; */
+	padding: 5px 0px;
+	transition: box-shadow 0.2s;
 }
+
+/* header:hover {
+	box-shadow: 0 0 10px #8c2753, 0 0 5px #8c2753 inset;
+} */
 
 nav {
 	display: block;
@@ -125,25 +153,49 @@ header ul {
 	justify-content: space-around;
 }
 
-header ul a {
-	color: black;
+header ul a::before, .self_name::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+header ul a:hover::before, .self_name:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+  
+
+header ul a, .self_name {
+	color: white;
 	/* border-bottom: 3px solid transparent; */
-	transition: border 0.2s;
+	/* transition: border 0.2s; */
 	text-decoration: none;
-	border-radius: 10px;
-	transition: all 0.5s;
+	position: relative;
+	/* border-radius: 10px; */
+	/* transition: all 0.5s; */
 	padding: 6px 15px;
 }
 
-header ul a:visited {
-	color: inherit;
+.self_name { 
+	padding: 0;
 }
 
-header ul a:hover {
+/* header ul a:visited {
+	color: inherit;
+} */
+
+/* header ul a:hover { */
 	/* border-bottom: 1px solid black; */
-	background-color: black;
-	color: white;
-}
+	/* background-color: black; */
+	/* color: white; */
+/* } */
 
 .fa-external-link-alt {
 	font-size: 16px;
@@ -154,6 +206,10 @@ header ul a:hover {
 		margin-top: -17px;
 		margin-bottom: -17px;
 		/* This space is probably coming from break tags */
+	}
+
+	.main2 {
+		margin-left: 0px;
 	}
 }
 
@@ -181,6 +237,7 @@ header ul a:hover {
 		position: absolute;
 		top: 80px;
 		right: 15px;
+		background-color: black;
 	}
 
 	main {
@@ -208,5 +265,40 @@ header ul a:hover {
 @media screen and (min-width: 840px) {
 	nav {
 		display: block !important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.main {
+		min-width: auto;
+	}
+
+	.home_main {
+		padding-right: 50px;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.main {
+		min-width: 500px;
+	}
+
+	.home_main {
+		padding-right: 450px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.main > h1 {
+		font-size: 75px;
+	}
+
+	.main > h2 {
+		font-size: 40px;
+	}
+
+	.home_main {
+		padding-right: 20px;
+		margin-left: 20px;
 	}
 }
