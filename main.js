@@ -17,14 +17,22 @@ window.onload = () => {
 	let nav = document.getElementsByTagName('nav')[0];
 	let html = document.getElementsByTagName('html')[0];
 	let body = document.getElementsByTagName('body')[0];
-	const aspectRatio = 1280.0/960.0;
+	let bg_img = document.getElementById("bg_img");
+	const aspectRatio = 2880.0/1800.0;
 	
-	// const updateBG = () => html.style.backgroundSize = 
-	// 	window.innerWidth / window.innerHeight < aspectRatio ? 'auto 100%' : '100% auto';
+	const updateBG = () => {
+		if (window.innerWidth / window.innerHeight < aspectRatio) {
+			bg_img.style.height = "100%";
+			bg_img.style.width = "auto";
+		} else {
+			bg_img.style.height = "auto";
+			bg_img.style.width = "100%";
+		}
+	}
 		
-	// updateBG();
+	updateBG();
 	
-	// window.addEventListener('resize', updateBG);
+	window.addEventListener('resize', updateBG);
 
 	nav_menu_button.addEventListener('click', () => {
 
