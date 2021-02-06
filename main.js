@@ -9,6 +9,52 @@ function isDescendant(parent, child) {
      return false;
 }
 
+function hideNavIfClickedOutside(e) {
+	let header = document.getElementsByTagName('header')[0];
+	
+	e = e || event
+	let target = e.target || e.srcElement
+	innerId = target.id;
+
+	if ( innerId == 'nav_menu_button' || isDescendant(header, target) || isDescendant(nav_menu_button, target) ) {
+
+	} else {
+		hideMobileNav();
+	}
+}
+
+function showMobileNav() {
+	let nav_menu_button = document.getElementById('nav_menu_button');
+	let nav = document.getElementsByTagName('nav')[0];
+	let header = document.getElementsByTagName('header')[0];
+
+	if (header.classList.contains('mobile_nav_roll_up')) 
+		header.classList.remove('mobile_nav_roll_up');
+
+	header.classList.add('mobile_nav_roll_down');
+	nav_menu_button.style.backgroundColor = 'white';
+	nav_menu_button.getElementsByTagName('p')[0].style.color = 'black';
+	nav.style.display = 'block';
+}
+
+function hideMobileNav() {
+	let body = document.getElementsByTagName('body')[0];
+	let nav_menu_button = document.getElementById('nav_menu_button');
+	let nav = document.getElementsByTagName('nav')[0];
+	let header = document.getElementsByTagName('header')[0];
+
+	header.classList.remove('mobile_nav_roll_down');
+	header.classList.add('mobile_nav_roll_up');
+	
+	setTimeout(() => {
+		nav_menu_button.style.backgroundColor = 'black';
+		nav_menu_button.getElementsByTagName('p')[0].style.color = 'white';
+		nav.style.display = 'none';
+		header.classList.remove('mobile_nav_roll_up');
+		body.removeEventListener('click', hideNavIfClickedOutside);
+	}, 200);
+}
+
 (function () {
 
 window.onload = () => {
@@ -37,30 +83,10 @@ window.onload = () => {
 	nav_menu_button.addEventListener('click', () => {
 
 		if ( nav.style.display == 'none' || nav.style.display == '' ) {
-			nav_menu_button.style.backgroundColor = 'white';
-			nav_menu_button.getElementsByTagName('p')[0].style.color = 'black';
-			nav.style.display = 'block';
-
-			setTimeout(() => {
-				document.getElementsByTagName("body")[0].addEventListener('click', function(e) {
-					e = e || event
-					let target = e.target || e.srcElement
-					innerId = target.id;
-
-					if ( innerId == 'nav_menu_button' || isDescendant(header, target) || isDescendant(nav_menu_button, target) ) {
-
-					} else {
-						nav_menu_button.style.backgroundColor = 'black';
-						nav_menu_button.getElementsByTagName('p')[0].style.color = 'white';
-						nav.style.display = 'none';
-					}
-				});
-			}, 50);
-
+			showMobileNav();
+			setTimeout(() => body.addEventListener('click', hideNavIfClickedOutside), 50);
 		} else {
-			nav_menu_button.style.backgroundColor = 'black';
-			nav_menu_button.getElementsByTagName('p')[0].style.color = 'white';
-			nav.style.display = 'none';
+			hideMobileNav();
 		}
 
 	});
