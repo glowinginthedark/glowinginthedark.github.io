@@ -34,7 +34,7 @@ span {
 }
 
 .project:hover {
-	border-right: 3px solid black;
+	border: 3px solid black;
 }
 
 .project_info {
