@@ -1,0 +1,124 @@
+body {
+    background-color: grey;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turntable_container {
+    width: 500px;
+    text-align: center;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.rotate_stuff {
+    transform-origin: 280px 280px;
+    animation: rotation 2s infinite linear;
+}
+
+/* svg */
+
+.cls-1 {
+    fill: #fff;
+    stroke: #000;
+}
+
+.cls-1, .cls-11, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-2, .cls-6, .cls-7, .cls-8 {
+    stroke-miterlimit: 10;
+}
+
+.cls-2 {
+    fill: #01a79c;
+    stroke: #353535;
+    stroke-width: 2px;
+}
+
+.cls-3 {
+    fill: #dbdbdb;
+}
+
+.cls-4 {
+    fill: #261f23;
+}
+
+.cls-5 {
+    opacity: 0.3;
+}
+
+.cls-11, .cls-15, .cls-16, .cls-6 {
+    fill: none;
+}
+
+.cls-19, .cls-6 {
+    stroke: #dbd7d8;
+}
+
+.cls-7 {
+    fill: #d6d7d9;
+    stroke: #251c1c;
+}
+
+.cls-15, .cls-17, .cls-18, .cls-19, .cls-7, .cls-8 {
+    stroke-width: 3px;
+}
+
+.cls-8 {
+    fill: #251c1c;
+}
+
+.cls-15, .cls-16, .cls-8 {
+    stroke: #d6d7d9;
+}
+
+.cls-9 {
+    fill: #025d56;
+}
+
+.cls-10 {
+    fill: #fefefe;
+}
+
+.cls-11 {
+    stroke: #f2f2f2;
+    stroke-width: 6px;
+}
+
+.cls-12 {
+    fill: #9b9b9b;
+}
+
+.cls-13 {
+    fill: #cdcdcd;
+}
+
+.cls-14 {
+    fill: #b3b3b3;
+}
+
+.cls-16 {
+    stroke-width: 0.5px;
+}
+
+.cls-17 {
+    fill: #c9008e;
+    stroke: #8e1416;
+}
+
+.cls-18 {
+    fill: #ed1b26;
+    stroke: #ed1b26;
+}
+
+.cls-19 {
+    fill: #271c1e;
+}

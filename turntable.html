@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/turntable.css">
+</head>
+
+<body>
+	<div class="turntable_container">
+		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 609.71 608.32">
+			<path class="cls-1" d="M462.5-33.5" transform="translate(-392.5 -102.5)"/>
+			<rect class="cls-2" x="1" y="1" width="563" height="563"/>
+			<circle class="cls-3" cx="282.5" cy="282.5" r="211"/>
+			<circle class="cls-4" cx="282.5" cy="282.5" r="195"/>
+			<ellipse class="cls-4" cx="35.56" cy="35.74" rx="23.88" ry="23.76"/>
+			<g id="disc" class="cls-5">
+				<circle class="cls-6" cx="282.5" cy="282.5" r="67.5"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="75.16"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="82.81"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="90.47"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="98.12"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="105.78"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="113.44"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="121.09"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="128.75"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="136.41"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="144.06"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="151.72"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="159.38"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="167.03"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="174.69"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="182.34"/>
+				<circle class="cls-6" cx="282.5" cy="282.5" r="190"/>
+			</g>
+			<ellipse class="cls-7" cx="36" cy="35.36" rx="12.2" ry="12.14"/>
+			<circle class="cls-8" cx="491.89" cy="33.75" r="14.25"/>
+			<circle class="cls-8" cx="452.25" cy="33.75" r="14.25"/>
+			<circle class="cls-8" cx="530.35" cy="33.75" r="14.25"/>
+			<rect class="cls-8" x="17" y="517" width="70" height="32"/>
+			<circle class="cls-8" cx="509.5" cy="517.5" r="35.5"/>
+			<rect class="cls-9" x="188.5" y="525.5" width="188" height="14"/>
+			<rect class="cls-10" x="208.5" y="517.5" width="12" height="30"/>
+			<path class="cls-11" d="M981.06,689.66,809.6,537.35a37.16,37.16,0,0,1-12.48-28.8l4-150.23a22.18,22.18,0,0,0-6.35-16.16l-38.94-39.72" transform="translate(-392.5 -102.5)"/>
+			<g>
+				<rect class="cls-12" x="947" y="672" width="54" height="24" transform="translate(862.78 1737.97) rotate(-138.75)"/>
+				<rect class="cls-13" x="982.91" y="685.52" width="13" height="24" transform="translate(880.87 1771.81) rotate(-138.75)"/>
+			</g>
+			<circle class="cls-14" cx="509.5" cy="517.5" r="22"/>
+			<rect class="cls-12" x="744.26" y="304.03" width="41" height="14" transform="translate(25.41 -540.66) rotate(43.03)"/>
+			<line class="cls-15" x1="530" y1="33.5" x2="530" y2="46.5"/>
+			<line class="cls-15" x1="504.37" y1="36.27" x2="491.63" y2="33.73"/>
+			<line class="cls-15" x1="452" y1="34" x2="439" y2="34"/>
+			<path class="cls-15" d="M683,444.47" transform="translate(-392.5 -102.5)"/>
+			<line id="line" class="cls-16" x1="283" y1="282" x2="328.24" y2="472.11"/>
+			<circle class="cls-17" cx="282.5" cy="282.5" r="60"/>
+			<circle class="cls-18" cx="282.5" cy="282.5" r="29"/>
+			<ellipse class="cls-19" cx="282.5" cy="282.5" rx="13.66" ry="13.72"/>
+		</svg>
+		<audio id="my_audio" src="assets/soviet.mp3" loop="loop"></audio>
+		<button onclick="startPlaying()">Play</button>
+	</div>
+
+	<script type="text/javascript">
+		function startPlaying() {
+			document.querySelector("#my_audio").play();
+			[document.querySelector("#line"), document.querySelector("#disc")].forEach(el => el.classList.add('rotate_stuff'));
+		}
+	</script>
+</body>
+</html>
