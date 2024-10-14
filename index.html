@@ -13,12 +13,35 @@
 
     <style>
         body {
+            cursor: url('normal-cursor-small.png'), auto;
             display: flex;
             justify-content: center;
             padding: 64px;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: beige;
+            /* background-color: beige; */
+            background-image: url('bg10.png');
+            background-size: 10vw;
+            background-attachment: local;
+            background-repeat: repeat;
+            background-position: -7px;
+            transform: scale(1.0);
+        }
+
+        body *::selection {
+            background-color: black;
+            color: #FFFAFA;
+        }
+
+        body *::-moz-selection {
+            background-color: black;
+            color: #FFFAFA;
+        }
+
+        a {
+            /* text-decoration: none; */
+            color: black;
+            cursor: url('pointer-cursor-small.png'), auto;
         }
 
         p {
@@ -85,6 +108,7 @@
             <p>
                 <a href="https://www.linkedin.com/in/bilal-zubair-3a2b02186/">LinkedIn</a>
                 <a href="https://github.com/glowinginthedark">GitHub</a>
+                <a href="https://www.youtube.com/@mbzdotdev">YouTube</a>
                 <a href="https://x.com/mbzdotdev/">X</a>
             </p>
         </div>
