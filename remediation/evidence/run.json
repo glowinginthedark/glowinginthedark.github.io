@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "status": "validated-upgrade",
+  "model": "gpt-5.5",
+  "reasoning_effort": "medium",
+  "started_at": "2026-10-09T22:09:20.241150+00:00",
+  "seconds": 21.183,
+  "before_version": "4.17.20",
+  "after_version": "4.18.1",
+  "resolved": [
+    "lodash|https://github.com/advisories/GHSA-29mw-wpgm-hmr9",
+    "lodash|https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+    "lodash|https://github.com/advisories/GHSA-f23m-r3pf-42rh",
+    "lodash|https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+    "lodash|https://github.com/advisories/GHSA-xxjr-mmjv-4gpg"
+  ],
+  "remaining": [],
+  "new": [],
+  "checks_passed": true,
+  "node_version": "v22.22.0",
+  "npm_version": "10.9.4",
+  "codex_version": "codex-cli 0.145.0",
+  "fixture_sha256": {
+    "package-lock.json": "46f93a8c44fcbf481e734763c2e50c7e4a5634f0bcbe02560a2aedeb1c3e11c5",
+    "package.json": "5231101bb4449908206cc0bec88f88b4a5ad6f4ec8649b9504389d39f27da44b",
+    "app.cjs": "49937710fd45622a7b8e0887698c1d331a9eda4e7a133bd558c9cfdf987d51c2",
+    "app.test.cjs": "1957cc35d3487ee9c7679243e8be48b8a67cce663e5f1435144707355c186680"
+  },
+  "run_id": "20261009T220920Z-ca8282",
+  "provenance": "Recorded local execution \u00b7 authored sample",
+  "stages": [
+    {
+      "stage": "node-version",
+      "seconds": 0.021,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "npm-version",
+      "seconds": 0.077,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "codex-version",
+      "seconds": 0.042,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "install-before",
+      "seconds": 0.347,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "tests-before",
+      "seconds": 0.078,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "scan-before",
+      "seconds": 0.349,
+      "exit_code": 1,
+      "timed_out": false
+    },
+    {
+      "stage": "agent",
+      "seconds": 19.086,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "lock-after",
+      "seconds": 0.407,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "install-after",
+      "seconds": 0.393,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "tests-after",
+      "seconds": 0.078,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "stage": "scan-after",
+      "seconds": 0.295,
+      "exit_code": 0,
+      "timed_out": false
+    }
+  ],
+  "findings": [
+    {
+      "package": "lodash",
+      "advisory": "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+      "title": "Command Injection in lodash",
+      "severity": "high",
+      "range": "<4.17.21",
+      "fixAvailable": {
+        "name": "lodash",
+        "version": "4.18.1",
+        "isSemVerMajor": false
+      }
+    },
+    {
+      "package": "lodash",
+      "advisory": "https://github.com/advisories/GHSA-29mw-wpgm-hmr9",
+      "title": "Regular Expression Denial of Service (ReDoS) in lodash",
+      "severity": "moderate",
+      "range": ">=4.0.0 <4.17.21",
+      "fixAvailable": {
+        "name": "lodash",
+        "version": "4.18.1",
+        "isSemVerMajor": false
+      }
+    },
+    {
+      "package": "lodash",
+      "advisory": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc",
+      "title": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "severity": "high",
+      "range": ">=4.0.0 <=4.17.23",
+      "fixAvailable": {
+        "name": "lodash",
+        "version": "4.18.1",
+        "isSemVerMajor": false
+      }
+    },
+    {
+      "package": "lodash",
+      "advisory": "https://github.com/advisories/GHSA-f23m-r3pf-42rh",
+      "title": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+      "severity": "moderate",
+      "range": "<=4.17.23",
+      "fixAvailable": {
+        "name": "lodash",
+        "version": "4.18.1",
+        "isSemVerMajor": false
+      }
+    },
+    {
+      "package": "lodash",
+      "advisory": "https://github.com/advisories/GHSA-xxjr-mmjv-4gpg",
+      "title": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions",
+      "severity": "moderate",
+      "range": ">=4.0.0 <=4.17.22",
+      "fixAvailable": {
+        "name": "lodash",
+        "version": "4.18.1",
+        "isSemVerMajor": false
+      }
+    }
+  ]
+}
