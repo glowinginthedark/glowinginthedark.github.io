@@ -11,6 +11,7 @@
     "evidence/scan-before.json": "cd1e48bd6e13462950a01a310c8e987748bfba52641cef5594a3f3d8e7705aa0",
     "evidence/tests-after.stdout": "42c91ab4dd3ab13de8afe69eb85a4257dfd798cf802fc90e975291f0459e55dc",
     "evidence/tests-before.stdout": "9e3390864ccf600f208f5dfba3491cf0af167a77a9c876a23b1d61409acc2ec0",
-    "index.html": "abb3e8b0c2c4cb75b4c8010ef2248028d454257bc7c6d2bf512719f062ada464"
+    "favicon.svg": "0f0c1becdd27322e7fee0ae5296e3a8a6b9bfecf6550f9e380684ce82e5b0839",
+    "index.html": "e9121e17c2978bc66407143401d31f9afd5f021615cf2490a4e61a2a0dd3c3c9"
   }
 }
