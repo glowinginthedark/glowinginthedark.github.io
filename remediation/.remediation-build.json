@@ -2,8 +2,8 @@
   "generator": "agent-remediation-lab",
   "base_url": "/remediation/",
   "files": {
-    "assets/index-DcC02dza.js": "9c04c16bcd90cff2d4d3ef57dedb548ac0d9a7c0f3d7d8e34d5a06177f45a60f",
-    "assets/index-KtUsIXWt.css": "ad192b89f478b4bf6c9d930065bcb0982680b3bc4c7e531959753513b85a2840",
+    "assets/index-9dNqTa0X.js": "a3f4e2d2f2b49fb42938607c852fc9528955808a60082e92a0636aadd0325103",
+    "assets/index-ditqkbIc.css": "b1bf220e7fc0ac299ed6215821435e79312d5c30bf69dbedbd67f8e9498a695b",
     "evidence/patch.diff": "abd8b4eee74de8ea258515f222127b1685ac0490d179a24a228fe15cfa3871af",
     "evidence/report.md": "2aa5a218eb0c17c3f97e9152feb90475061edc286aa68b150d478044ed920556",
     "evidence/run.json": "e0a131ce397a82f78c8e2e50966d8fee84d6b83af468f63b09cfbcd8efe6c31a",
@@ -11,6 +11,6 @@
     "evidence/scan-before.json": "cd1e48bd6e13462950a01a310c8e987748bfba52641cef5594a3f3d8e7705aa0",
     "evidence/tests-after.stdout": "42c91ab4dd3ab13de8afe69eb85a4257dfd798cf802fc90e975291f0459e55dc",
     "evidence/tests-before.stdout": "9e3390864ccf600f208f5dfba3491cf0af167a77a9c876a23b1d61409acc2ec0",
-    "index.html": "fd2bf10cc011a020533362da88b43b241a7f8a4d89a7bff5770e9341a4513d60"
+    "index.html": "dc9cc2c93ff5ecd4344f5703846cbb05af5a29c1aab8562b4028132f97456fd0"
   }
 }
