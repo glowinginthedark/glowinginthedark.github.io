@@ -2,7 +2,7 @@
   "generator": "agent-remediation-lab",
   "base_url": "/remediation/",
   "files": {
-    "assets/index-CB4VwjYN.js": "8f84bdc43182615fff336ffb72829edb2513248fb7ec8f0bed33e9c431c8a70b",
+    "assets/index-DcC02dza.js": "9c04c16bcd90cff2d4d3ef57dedb548ac0d9a7c0f3d7d8e34d5a06177f45a60f",
     "assets/index-KtUsIXWt.css": "ad192b89f478b4bf6c9d930065bcb0982680b3bc4c7e531959753513b85a2840",
     "evidence/patch.diff": "abd8b4eee74de8ea258515f222127b1685ac0490d179a24a228fe15cfa3871af",
     "evidence/report.md": "2aa5a218eb0c17c3f97e9152feb90475061edc286aa68b150d478044ed920556",
@@ -11,6 +11,6 @@
     "evidence/scan-before.json": "cd1e48bd6e13462950a01a310c8e987748bfba52641cef5594a3f3d8e7705aa0",
     "evidence/tests-after.stdout": "42c91ab4dd3ab13de8afe69eb85a4257dfd798cf802fc90e975291f0459e55dc",
     "evidence/tests-before.stdout": "9e3390864ccf600f208f5dfba3491cf0af167a77a9c876a23b1d61409acc2ec0",
-    "index.html": "5340a97f7719d4d50f69e4285d6348117d1e08d75bd4357b38a5ea9bbac0908f"
+    "index.html": "fd2bf10cc011a020533362da88b43b241a7f8a4d89a7bff5770e9341a4513d60"
   }
 }
