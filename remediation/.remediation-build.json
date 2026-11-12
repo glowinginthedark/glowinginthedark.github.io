@@ -2,8 +2,8 @@
   "generator": "agent-remediation-lab",
   "base_url": "/remediation/",
   "files": {
-    "assets/index-Bqy4To8d.css": "ea347c974178e85d5d80aac50fba4189a8b0597d67b64af774e49feda4793969",
-    "assets/index-QGbi1FLS.js": "4d8cef2d2343e2a13014f247f879f1828e0b1078360dcf33c96a4f5d31e61c65",
+    "assets/index-B6uBnciZ.js": "c0aecfde143d470c3993fcaeb2c539250c3de39f7ecc6eb7f26eac1a8c2473df",
+    "assets/index-DNEs-2D9.css": "1a5bba88a8e807557ede7e9e2b763a66d081d082bd310989f3405fc56817833e",
     "evidence/patch.diff": "abd8b4eee74de8ea258515f222127b1685ac0490d179a24a228fe15cfa3871af",
     "evidence/report.md": "2aa5a218eb0c17c3f97e9152feb90475061edc286aa68b150d478044ed920556",
     "evidence/run.json": "e0a131ce397a82f78c8e2e50966d8fee84d6b83af468f63b09cfbcd8efe6c31a",
@@ -12,6 +12,6 @@
     "evidence/tests-after.stdout": "42c91ab4dd3ab13de8afe69eb85a4257dfd798cf802fc90e975291f0459e55dc",
     "evidence/tests-before.stdout": "9e3390864ccf600f208f5dfba3491cf0af167a77a9c876a23b1d61409acc2ec0",
     "favicon.svg": "0f0c1becdd27322e7fee0ae5296e3a8a6b9bfecf6550f9e380684ce82e5b0839",
-    "index.html": "e9121e17c2978bc66407143401d31f9afd5f021615cf2490a4e61a2a0dd3c3c9"
+    "index.html": "c842888923b88e6e506a1c525170174bd69e883a1e487a1dba959897a49452eb"
   }
 }
