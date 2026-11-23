@@ -2,8 +2,8 @@
   "generator": "agent-remediation-lab",
   "base_url": "/remediation/",
   "files": {
-    "assets/index-B6uBnciZ.js": "c0aecfde143d470c3993fcaeb2c539250c3de39f7ecc6eb7f26eac1a8c2473df",
-    "assets/index-DNEs-2D9.css": "1a5bba88a8e807557ede7e9e2b763a66d081d082bd310989f3405fc56817833e",
+    "assets/index-BnyLsgty.css": "4dca6a110e86bce847577de8d4b5933293cf700b6291afa1b505d6ba0a2178a0",
+    "assets/index-DIttdf73.js": "80519f2f75a9fa8e3c9212a686a72bbbe15454c9d484fcafdc3a837d4e1e41c1",
     "evidence/patch.diff": "abd8b4eee74de8ea258515f222127b1685ac0490d179a24a228fe15cfa3871af",
     "evidence/report.md": "2aa5a218eb0c17c3f97e9152feb90475061edc286aa68b150d478044ed920556",
     "evidence/run.json": "e0a131ce397a82f78c8e2e50966d8fee84d6b83af468f63b09cfbcd8efe6c31a",
@@ -12,6 +12,6 @@
     "evidence/tests-after.stdout": "42c91ab4dd3ab13de8afe69eb85a4257dfd798cf802fc90e975291f0459e55dc",
     "evidence/tests-before.stdout": "9e3390864ccf600f208f5dfba3491cf0af167a77a9c876a23b1d61409acc2ec0",
     "favicon.svg": "0f0c1becdd27322e7fee0ae5296e3a8a6b9bfecf6550f9e380684ce82e5b0839",
-    "index.html": "c842888923b88e6e506a1c525170174bd69e883a1e487a1dba959897a49452eb"
+    "index.html": "dd5be7a6a89800292ce0dda5682dbc459c36537006fd17072e94acccebff359d"
   }
 }
